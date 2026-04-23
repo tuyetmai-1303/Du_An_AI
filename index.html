@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hệ Thống Điều Phối Giao Thông Thông Minh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="chat-card">
+    <div class="header">
+      🚦 TRỢ LÝ GIAO THÔNG AI
+    </div>
+
+    <div id="chat-window">
+      <div class="msg bot">
+        Xin chào! Tôi là trợ lý điều phối giao thông. Tôi đã sẵn sàng hỗ trợ bạn tìm lộ trình tối ưu dựa trên dữ liệu Camera và GPS thực tế. Bạn muốn đi từ đâu đến đâu?
+      </div>
+    </div>
+
+    <div id="loading" class="loading">Đang phân tích lộ trình...</div>
+
+    <div class="input-box">
+      <input id="user-input" type="text" placeholder="Ví dụ: Đi từ A đến I..." autocomplete="off">
+      <button id="send-btn" onclick="send()">➔</button>
+    </div>
+  </div>
+
+  <script>
+    async function send() {
+      const input = document.getElementById('user-input');
+      const chatWindow = document.getElementById('chat-window');
+      const loading = document.getElementById('loading');
+      const text = input.value.trim();
+
+      if (!text) return;
+
+      // Hiển thị tin nhắn người dùng
+      addMsg(text, 'user');
+      input.value = '';
+      
+      // Hiển thị trạng thái đang xử lý
+      loading.style.display = 'block';
+
+      try {
+        const res = await fetch('http://127.0.0.1:5000/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: text })
+        });
+
+        if (!res.ok) throw new Error('Không thể kết nối đến server');
+
+        const data = await res.json();
+        addMsg(data.reply, 'bot');
+      } catch (error) {
+        addMsg("❌ Lỗi: " + error.message, 'bot');
+      } finally {
+        loading.style.display = 'none';
+      }
+    }
+
+    function addMsg(text, type) {
+      const chatWindow = document.getElementById('chat-window');
+      const div = document.createElement('div');
+      div.className = 'msg ' + type;
+      div.innerText = text;
+      chatWindow.appendChild(div);
+      
+      // Tự động cuộn xuống tin nhắn mới nhất
+      chatWindow.scrollTop = chatWindow.scrollHeight;
+    }
+
+    // Gửi tin nhắn khi nhấn phím Enter
+    document.getElementById('user-input').addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        send();
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+=== BÁO CÁO ĐIỀU PHỐI GIAO THÔNG TỔNG THỂ ===
+XẾP HẠNG     | LỘ TRÌNH CHI TIẾT                                            | ĐỘ TẮC
+------------------------------------------------------------------------------------------
+🏆 BEST       | Ngã tư Hàng Xanh -> Điện Biên Phủ -> Nguyễn Hữu Cảnh -> Cầu Thủ Thiêm -> Hầm Thủ Thiêm |      47.00
+Option 2     | Ngã tư Hàng Xanh -> Cầu Sài Gòn -> Ngã tư Thủ Đức -> Lê Văn Việt -> Hầm Thủ Thiêm |      65.46
+Option 3     | Ngã tư Hàng Xanh -> Điện Biên Phủ -> Xa Lộ Hà Nội -> Cầu Thủ Thiêm -> Hầm Thủ Thiêm |      65.98
+Option 4     | Ngã tư Hàng Xanh -> Điện Biên Phủ -> Xa Lộ Hà Nội -> Lê Văn Việt -> Hầm Thủ Thiêm |      69.98
+Option 5     | Ngã tư Hàng Xanh -> Cầu Sài Gòn -> Xa Lộ Hà Nội -> Cầu Thủ Thiêm -> Hầm Thủ Thiêm |      79.00
+Option 6     | Ngã tư Hàng Xanh -> Cầu Sài Gòn -> Xa Lộ Hà Nội -> Lê Văn Việt -> Hầm Thủ Thiêm |      83.00
+Option 7     | Ngã tư Hàng Xanh -> Điện Biên Phủ -> Nguyễn Hữu Cảnh -> Cầu Thủ Thiêm -> Xa Lộ Hà Nội -> Lê Văn Việt -> Hầm Thủ Thiêm |      90.42
+Option 8     | Ngã tư Hàng Xanh -> Cầu Sài Gòn -> Xa Lộ Hà Nội -> Điện Biên Phủ -> Nguyễn Hữu Cảnh -> Cầu Thủ Thiêm -> Hầm Thủ Thiêm |      97.44
+Option 9     | Ngã tư Hàng Xanh -> Điện Biên Phủ -> Xa Lộ Hà Nội -> Cầu Sài Gòn -> Ngã tư Thủ Đức -> Lê Văn Việt -> Hầm Thủ Thiêm |     102.88
+Option 10    | Ngã tư Hàng Xanh -> Cầu Sài Gòn -> Ngã tư Thủ Đức -> Lê Văn Việt -> Xa Lộ Hà Nội -> Cầu Thủ Thiêm -> Hầm Thủ Thiêm |     104.88
+Option 11    | Ngã tư Hàng Xanh -> Điện Biên Phủ -> Nguyễn Hữu Cảnh -> Cầu Thủ Thiêm -> Xa Lộ Hà Nội -> Cầu Sài Gòn -> Ngã tư Thủ Đức -> Lê Văn Việt -> Hầm Thủ Thiêm |     123.32
+Option 12    | Ngã tư Hàng Xanh -> Cầu Sài Gòn -> Ngã tư Thủ Đức -> Lê Văn Việt -> Xa Lộ Hà Nội -> Điện Biên Phủ -> Nguyễn Hữu Cảnh -> Cầu Thủ Thiêm -> Hầm Thủ Thiêm |     123.32
+------------------------------------------------------------------------------------------
+👉 LỜI KHUYÊN: Lộ trình tối ưu nhất là Ngã tư Hàng Xanh -> Điện Biên Phủ -> Nguyễn Hữu Cảnh -> Cầu Thủ Thiêm -> Hầm Thủ Thiêm
