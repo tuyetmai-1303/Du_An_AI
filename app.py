@@ -4,8 +4,11 @@ from groq import Groq
 import os
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='.', static_url_path='')
 CORS(app)
+@app.route('/')
+def index():
+    return app.send_static_file('index.html')
 
 # 1. Cấu hình API Key Groq (Bạn lấy key miễn phí tại: https://console.groq.com/)
 # Thay "YOUR_GROQ_API_KEY" bằng key của bạn
