@@ -71,12 +71,4 @@ def chat():
         return jsonify({"reply": f"❌ Có lỗi xảy ra: {str(e)}"})
 
 if __name__ == '__main__':
-    # Tự động mở trình duyệt khi chạy file (tùy chọn)
-    import webbrowser
-    from threading import Timer
-
-    def open_browser():
-        webbrowser.open_new('http://127.0.0.1:5000')
-
-    # Timer(1, open_browser).start()
-    app.run(port=5000, debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
