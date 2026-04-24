@@ -67,11 +67,10 @@ def chat():
         return jsonify({"reply": reply})
 
     except Exception as e:
-        print(f"Error: {str(e)}")
-        # Trả về thông báo lỗi thân thiện nếu API gặp sự cố
+        print(f"FULL ERROR: {repr(e)}")
         if "429" in str(e):
             return jsonify({"reply": "⚠️ Hệ thống đang bận do quá nhiều yêu cầu. Vui lòng thử lại sau giây lát!"})
-        return jsonify({"reply": f"❌ Có lỗi xảy ra: {str(e)}"})
+        return jsonify({"reply": f"❌ Có lỗi xảy ra: {repr(e)}"})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=False)
